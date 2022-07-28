@@ -11,7 +11,7 @@ using System.Threading.Tasks;
     {
         public bool IsAnagram(string s, string t)
         {
-
+            return s.Except(t).Count() == 0 && t.Except(s).Count() == 0;
         }
     }
 }
