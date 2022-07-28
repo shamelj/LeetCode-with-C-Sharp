@@ -3,13 +3,14 @@
 // Memory Usage: 46.1 MB
 // Link: https://leetcode.com/submissions/detail/751018763/
 //-----------------------------------------------------------------------------
-namespace LeetCode;
+
+namespace LeetCode_with_C_Sharp.LeetCode;
 public class _26_RemoveDuplicatesFromSortedArray
 {
     public int RemoveDuplicates(int[] nums)
     {
         int l = 0, r = 1;
-        while(r< nums.Length)
+        while (r < nums.Length)
         {
             if (nums[r] != nums[l])
                 nums[++l] = nums[r];
